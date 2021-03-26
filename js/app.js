@@ -26,7 +26,7 @@ async function fetchWeatherData() {
 currentWeather = (data) => {
   document.querySelector(".current-icon").innerHTML = `<img  src=${weatherIcons(
     data.current.weather[0].main
-  )}>`;
+  )} alt="weatherIcon">`;
   document.querySelector(".currentInfo").innerHTML = `<h1>${city}</h1>
       <p class="current-temp">${convertToCelsius(data.current.temp)}&deg</p>
       <p class="current-humidity">Humidity: ${data.current.humidity}%</p>
