@@ -1,4 +1,4 @@
-let numOfDays = 5;
+let numOfDays = 6;
 let city = "Barcelona, Spain";
 //fetch weather data for Barcelona then calls currentWeather and forcast functions to show current weather and 5 upcoming days forcast
 fetchWeatherData();
