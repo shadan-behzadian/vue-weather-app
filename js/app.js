@@ -128,7 +128,7 @@ weatherIcons = (weatherStatus) => {
     case "Haze":
     case "Smoke":
     case "Mist":
-      return "./icons/clear.svg";
+      return "./icons/tornado.svg";
       break;
     case "Snow":
       return "./icons/snow.svg";
