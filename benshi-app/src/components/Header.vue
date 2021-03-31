@@ -115,22 +115,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-#app-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 3% auto 3% auto;
-}
-h1 {
-  font-size: 2.5rem;
-}
-
-.current-info {
-  width: 65%;
-}
-
-.current-icon {
-  width: 20%;
-  margin: auto;
-}
-</style>
+<style lang="scss" scoped></style>

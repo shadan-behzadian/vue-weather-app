@@ -104,17 +104,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.eachDay {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-  align-items: center;
-}
-.max-temp {
-  color: red;
-}
-.min-temp {
-  color: aqua;
-}
-</style>
+<style lang="scss" scoped></style>

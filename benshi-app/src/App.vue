@@ -43,402 +43,129 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
-
-.forcast {
-  display: flex;
-}
-.eachDay {
-  display: flex;
-  flex-direction: column;
-  margin: auto 10px auto 10px;
-}
-#app {
-  background-color: white;
-  height: 100%;
-  font-family: "Open Sans", sans-serif;
-}
 main {
   background: linear-gradient(
     rgb(128, 202, 226),
     rgb(68, 68, 223),
-    rgb(24, 24, 179)
+    rgb(8, 8, 122)
   );
   color: white;
-
   max-width: 900px;
   width: 100%;
   margin: 2% auto;
-  font-size: 2rem;
-  height: 100%;
   border-radius: 20px;
   padding: 2%;
+  font-family: "Open Sans", sans-serif;
 }
-.weather-icon {
-  width: 30%;
+#app-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 5% auto;
 }
-//mediaquary-------------------------------------------------
-
-/* Portrait  Ipad*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  main {
-    height: 130vh;
-  }
-  .forcast {
-    display: flex;
-    flex-direction: column;
-  }
-  .eachDay {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
-    align-items: center;
-    margin-bottom: 10%;
-    p {
-      width: 15%;
-    }
-    div {
-      width: 15%;
-    }
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  .current-icon {
-    width: 30%;
-    display: flex;
-  }
-  .current-info {
-    width: 60%;
-  }
-  .weather-icon {
-    width: 15%;
-  }
-}
-/* ----------- iPhone X ----------- */
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  main {
-    height: 100vh;
-  }
-  .forcast {
-    display: flex;
-    flex-direction: column;
-  }
-  .eachDay {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
-    align-items: center;
-    margin-bottom: 10%;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  .current-icon {
-    width: 30%;
-    display: flex;
-  }
-  .current-info {
-    width: 60%;
-  }
-  .weather-icon {
-    width: 15%;
-  }
-}
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  #app {
-    height: 100%;
-  }
-  main {
-    height: 150vh;
+.current-info {
+  width: 70%;
+  margin: auto;
+  p {
     font-size: 1.5rem;
   }
-  #app-header {
-    display: flex;
-    justify-content: end;
-  }
-  .current-icon {
-    width: 20%;
-    margin-right: 5%;
-  }
-  .current-info {
-    width: 55%;
-  }
-  .weather-icon {
-    width: 30%;
-  }
-  .eachDay {
-    display: flex;
-    flex-direction: column;
-  }
-  .forcast {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  main {
-    height: 100vh;
-  }
-  .forcast {
-    display: flex;
-    flex-direction: column;
-  }
-  .eachDay {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
-    align-items: center;
-    margin-bottom: 10%;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  .current-icon {
-    width: 30%;
-    display: flex;
-  }
-  .current-info {
-    width: 60%;
-  }
-  .weather-icon {
-    width: 15%;
-  }
-}
-/* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  #app {
-    height: 100%;
-  }
-  main {
-    font-size: 2rem;
-    height: 130vh;
-  }
-  #app-header {
-    display: flex;
-    justify-content: end;
-  }
-  .current-icon {
-    width: 20%;
-    margin-right: 5%;
-  }
-  .current-info {
-    width: 55%;
-  }
-  .weather-icon {
-    width: 30%;
-  }
-  .eachDay {
-    display: flex;
-    flex-direction: column;
-  }
-  .forcast {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  main {
-    height: 100vh;
-  }
-  .forcast {
-    display: flex;
-    flex-direction: column;
-  }
-  .eachDay {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
-    align-items: center;
-    margin-bottom: 10%;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  .current-icon {
-    width: 30%;
-    display: flex;
-  }
-  .current-info {
-    width: 60%;
-  }
-  .weather-icon {
-    width: 15%;
-  }
-}
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  #app {
-    height: 100%;
-  }
-  main {
-    font-size: 2rem;
-  }
-  #app-header {
-    display: flex;
-    justify-content: end;
-  }
-  .current-icon {
-    width: 20%;
-    margin-right: 5%;
-  }
-  .current-info {
-    width: 55%;
-  }
-  .weather-icon {
-    width: 30%;
-  }
-  .eachDay {
-    display: flex;
-    flex-direction: column;
-  }
-  .forcast {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  main {
-    height: 100vh;
-  }
+.current-icon {
+  width: 20%;
+  margin: auto;
+}
+.forcast {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+.eachDay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.weather-icon {
+  width: 50px;
+  margin: 10% auto 10% auto;
+}
+.max-temp {
+  color: rgb(197, 34, 34);
+}
+.min-temp {
+  color: rgb(40, 230, 230);
+}
+@media screen and (max-width: 600px) {
   .forcast {
     display: flex;
     flex-direction: column;
-  }
-  .eachDay {
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 10%;
+    font-size: 1rem;
+  }
+  .current-icon {
+    width: 25%;
+    margin: auto;
+  }
+  .current-info {
+    width: 70%;
+    margin: auto;
     p {
-      width: 15%;
+      font-size: 1rem;
     }
-    div {
-      width: 15%;
-    }
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  .current-icon {
-    width: 30%;
-    display: flex;
-  }
-  .current-info {
-    width: 60%;
-  }
-  .weather-icon {
-    width: 15%;
-  }
-}
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  #app {
-    height: 100%;
-  }
-  main {
-    font-size: 2rem;
-  }
-  #app-header {
-    display: flex;
-    justify-content: end;
-  }
-  .current-icon {
-    width: 20%;
-    margin-right: 5%;
-  }
-  .current-info {
-    width: 40%;
-  }
-  .weather-icon {
-    width: 30%;
-  }
-  .eachDay {
-    display: flex;
-    flex-direction: column;
-  }
-  .forcast {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-/* ----------- iPhone 4 and 4S ----------- */
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  main {
-    height: 120vh;
-  }
-  .forcast {
-    display: flex;
-    flex-direction: column;
-  }
-  .current-icon {
-    width: 30%;
-    display: flex;
-  }
-  .current-info {
-    width: 60%;
   }
   .eachDay {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 10px;
     align-items: center;
-    margin-bottom: 10%;
-  }
-  h1 {
-    font-size: 4rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    p {
+      width: 10%;
+    }
   }
   .weather-icon {
-    width: 15%;
+    width: 10%;
+    margin: 0;
   }
 }
-/* ----------- iPhone 4 and 4S ----------- */
-
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  #app {
-    height: 100%;
-  }
-  main {
-    font-size: 2rem;
-  }
-  #app-header {
-    display: flex;
-    justify-content: end;
-  }
+@media screen and (max-width: 400px) {
   .current-icon {
-    width: 20%;
-    margin-right: 5%;
+    width: 30%;
+    margin: auto;
   }
   .current-info {
-    width: 40%;
+    width: 65%;
+    margin: auto;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
-  .weather-icon {
-    width: 20%;
+}
+@media screen and (max-width: 290px) {
+  .current-info {
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.5rem;
+    }
+  }
+
+  .forcast {
+    font-size: 0.5rem;
   }
   .eachDay {
-    display: flex;
-    flex-direction: column;
-    margin: auto 10px auto 10px;
+    p {
+      width: 20%;
+      margin: 10px 0px;
+    }
   }
-  .forcast {
-    display: flex;
-    justify-content: space-between;
+  .weather-icon {
+    width: 10%;
   }
 }
 </style>

@@ -267,9 +267,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.icons {
-  width: 100%;
-  height: 100%;
-}
-</style>
+<style lang="scss"></style>
