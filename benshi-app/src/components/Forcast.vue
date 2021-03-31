@@ -110,7 +110,6 @@ export default {
   justify-content: space-around;
   margin-top: 10px;
   align-items: center;
-  margin-bottom: 10%;
 }
 .max-temp {
   color: red;

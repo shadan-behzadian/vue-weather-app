@@ -43,12 +43,14 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
+
 .forcast {
   display: flex;
 }
 .eachDay {
   display: flex;
   flex-direction: column;
+  margin: auto 10px auto 10px;
 }
 #app {
   background-color: white;
@@ -75,6 +77,7 @@ main {
   width: 30%;
 }
 //mediaquary-------------------------------------------------
+
 /* Portrait  Ipad*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   main {
@@ -91,12 +94,12 @@ main {
     margin-top: 10px;
     align-items: center;
     margin-bottom: 10%;
-  }
-  .eachDay p {
-    width: 15%;
-  }
-  .eachDay div {
-    width: 15%;
+    p {
+      width: 15%;
+    }
+    div {
+      width: 15%;
+    }
   }
   h1 {
     font-size: 4rem;
@@ -320,12 +323,12 @@ main {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 10%;
-  }
-  .eachDay p {
-    width: 15%;
-  }
-  .eachDay div {
-    width: 15%;
+    p {
+      width: 15%;
+    }
+    div {
+      width: 15%;
+    }
   }
   h1 {
     font-size: 4rem;

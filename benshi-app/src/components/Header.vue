@@ -7,7 +7,7 @@
     ></icon>
     <div class="current-info">
       <h1>{{ cityName }}</h1>
-      <p class="current-temp">{{ convertToCelsius(info.current.temp) }}&degC</p>
+      <p class="current-temp">{{ convertToCelsius(info.current.temp) }}&deg</p>
       <p class="current-humidity">Humidity: {{ info.current.humidity }}%</p>
       <p class="current-uvi">UVI: {{ info.current.uvi }}%</p>
       <p class="current-wind">
@@ -118,16 +118,19 @@ export default {
 <style lang="scss" scoped>
 #app-header {
   display: flex;
-
   justify-content: space-between;
-  margin: 10% auto;
+  margin: 3% auto 3% auto;
 }
+h1 {
+  font-size: 2.5rem;
+}
+
 .current-info {
-  width: 60%;
+  width: 65%;
 }
 
 .current-icon {
-  width: 25%;
+  width: 20%;
   margin: auto;
 }
 </style>
