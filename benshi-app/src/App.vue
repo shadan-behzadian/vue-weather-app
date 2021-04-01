@@ -69,7 +69,6 @@ main {
     font-size: 1.5rem;
   }
 }
-
 .current-icon {
   width: 20%;
   margin: auto;
