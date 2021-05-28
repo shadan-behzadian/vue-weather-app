@@ -9,7 +9,7 @@ UVI
 Wind direction (in text: for example, NE, SW, E, etc) and wind speed in kmh
 
 # External resources 
-https://api.openweathermap.org/data/2.5/onecall?lon=2.159&lat=41.3888&uniots=metric&appid= YOUR_API_KEY
+https://api.openweathermap.org/ 
 
 # Install
 
