@@ -1,5 +1,7 @@
 # Weather-app
 Responsive Barcelona weather app made with vue.
+main branch : vanilla javascript
+RedonewithVue barnch : same webapp done with vue
 
 shows :
 The weather min and max for today and the next 5 days.
