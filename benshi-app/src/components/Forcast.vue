@@ -61,7 +61,6 @@ export default {
         dailyWeatherInfo.push(obj);
         return dailyWeatherInfo;
       });
-
       return displayForcast;
     },
     // convert kelvin to celsius
